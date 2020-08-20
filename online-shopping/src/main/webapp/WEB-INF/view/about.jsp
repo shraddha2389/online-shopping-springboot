@@ -4,4 +4,5 @@
 <hr>
 <p>This is About Us page</p>
 </div>
+
 </div>
