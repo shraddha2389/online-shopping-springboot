@@ -18,7 +18,12 @@
   
   
   <dependencies>
-  
+  <!-- Link backend project with front end as dependancy -->
+  <dependency>
+   <groupId>com.dss</groupId>
+  <artifactId>shopping-backend</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  </dependency>
     
      <!-- Spring Servlet Dependancy starts here -->
      
