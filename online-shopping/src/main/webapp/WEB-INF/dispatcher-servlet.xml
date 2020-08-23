@@ -19,12 +19,13 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
    <!-- Define the base package to find the controller to create beans -->
    <context:component-scan base-package="com.dss.controller"/>
     <context:component-scan base-package="com.dss.shopping_backend.daoimpl"/>
+    <context:component-scan base-package="com.dss.shopping_backend.dao"/>
     
    <!-- Define the internal view resolver to resolve the view-->
    <bean id="viewResolver"
      class="org.springframework.web.servlet.view.InternalResourceViewResolver">
      
-     <property name="prefix" value="/WEB-INF/view/"/>
+     <property name="prefix" value="/WEB-INF/view/" />
      <property name="suffix" value=".jsp"/>
    </bean>
    

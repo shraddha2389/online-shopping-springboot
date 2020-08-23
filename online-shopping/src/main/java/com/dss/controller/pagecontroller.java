@@ -14,7 +14,7 @@ public class pagecontroller {
 
 	//add dependancy injection
 	@Autowired
-	private CategoryDAO categoryDao;
+	private CategoryDAO categoryDAO;
 	
 	@RequestMapping({"/" , "/home","/index"})
 	public ModelAndView index()
@@ -22,7 +22,7 @@ public class pagecontroller {
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("title", "Home");
 		
-		mv.addObject("categories", categoryDao.list());
+		mv.addObject("categories", categoryDAO.list());
 		mv.addObject("userClickHome",true);
 		return mv;	
 	}
@@ -53,7 +53,7 @@ public class pagecontroller {
 		mv.addObject("title", "All Products");
 		
 		/*Passing the list f categry here */
-		mv.addObject("categories", categoryDao.list());
+		mv.addObject("categories", categoryDAO.list());
 		mv.addObject("userClickAllProducts",true);
 		return mv;	
 	}
@@ -66,13 +66,13 @@ public class pagecontroller {
 		
 		//categoryDAO to fetch single category 
 		Category category=null;
-		category=categoryDao.get(id);
+		category=categoryDAO.get(id);
 		
 		mv.addObject("title",category.getName());
 		
 		
 		/*Passing the list of categry here */
-		mv.addObject("catergories", categoryDao.list());
+		mv.addObject("catergories", categoryDAO.list());
 		
 		
 		//passing single category
