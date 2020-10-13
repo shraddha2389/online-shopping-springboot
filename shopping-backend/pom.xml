@@ -18,10 +18,10 @@
 
   <dependencies>
     <dependency>
-    <!-- Adding JUNIT 4.12 -->
+    <!-- Adding JUNIT 4.13.1 -->
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
     
